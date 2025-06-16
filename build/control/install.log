@@ -1,4 +1,10 @@
+/mnt/Storage/Hackathons/IIITM/raged-ros2/install/control/lib/python3.10/site-packages/control/auto.py
+/mnt/Storage/Hackathons/IIITM/raged-ros2/install/control/lib/python3.10/site-packages/control/communication.py
+/mnt/Storage/Hackathons/IIITM/raged-ros2/install/control/lib/python3.10/site-packages/control/manual.py
 /mnt/Storage/Hackathons/IIITM/raged-ros2/install/control/lib/python3.10/site-packages/control/__init__.py
+/mnt/Storage/Hackathons/IIITM/raged-ros2/install/control/lib/python3.10/site-packages/control/__pycache__/auto.cpython-310.pyc
+/mnt/Storage/Hackathons/IIITM/raged-ros2/install/control/lib/python3.10/site-packages/control/__pycache__/communication.cpython-310.pyc
+/mnt/Storage/Hackathons/IIITM/raged-ros2/install/control/lib/python3.10/site-packages/control/__pycache__/manual.cpython-310.pyc
 /mnt/Storage/Hackathons/IIITM/raged-ros2/install/control/lib/python3.10/site-packages/control/__pycache__/__init__.cpython-310.pyc
 /mnt/Storage/Hackathons/IIITM/raged-ros2/install/control/share/ament_index/resource_index/packages/control
 /mnt/Storage/Hackathons/IIITM/raged-ros2/install/control/share/control/package.xml

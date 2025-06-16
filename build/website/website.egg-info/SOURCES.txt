@@ -13,3 +13,5 @@ test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
 website/__init__.py
+website/check_user.py
+website/waste_data.py
