@@ -1,0 +1,37 @@
+[1.260s] Invoking command in '/mnt/Storage/Hackathons/IIITM/raged-ros2/src/camera': PS1=
+\[[38;2;49;50;68m\]\[[48;2;49;50;68;38;2;205;214;244m\]󰕈 joel (Ubuntu 22.04) \[[48;2;250;179;135;38;2;49;50;68m\]\[[38;2;24;24;37m\] …/raged-ros2 \[[48;2;166;227;161;38;2;250;179;135m\]\[[38;2;30;30;46m\]  main !?⇡ \[[48;2;148;226;213;38;2;166;227;161m\]\[[48;2;137;180;250;38;2;148;226;213m\]\[[45;38;2;137;180;250m\]\[[38;2;24;24;37m\]  13:42 \[[0m\]\[[35m\] \[[0m\]
+\[[1;38;2;166;227;161m\]\[[0m\] PYTHONPATH=/mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera build --build-base /mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/build install --record /mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/install.log --single-version-externally-managed install_data
+[1.533s] running egg_info
+[1.535s] creating ../../build/camera/camera.egg-info
+[1.535s] writing ../../build/camera/camera.egg-info/PKG-INFO
+[1.537s] writing dependency_links to ../../build/camera/camera.egg-info/dependency_links.txt
+[1.537s] writing entry points to ../../build/camera/camera.egg-info/entry_points.txt
+[1.538s] writing requirements to ../../build/camera/camera.egg-info/requires.txt
+[1.538s] writing top-level names to ../../build/camera/camera.egg-info/top_level.txt
+[1.538s] writing manifest file '../../build/camera/camera.egg-info/SOURCES.txt'
+[1.540s] reading manifest file '../../build/camera/camera.egg-info/SOURCES.txt'
+[1.542s] writing manifest file '../../build/camera/camera.egg-info/SOURCES.txt'
+[1.542s] running build
+[1.543s] running build_py
+[1.543s] creating /mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/build
+[1.543s] creating /mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/build/lib
+[1.544s] creating /mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/build/lib/camera
+[1.544s] copying camera/__init__.py -> /mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/build/lib/camera
+[1.544s] running install
+[1.544s] running install_lib
+[1.546s] creating /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/lib/python3.10/site-packages/camera
+[1.547s] copying /mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/build/lib/camera/__init__.py -> /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/lib/python3.10/site-packages/camera
+[1.548s] byte-compiling /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/lib/python3.10/site-packages/camera/__init__.py to __init__.cpython-310.pyc
+[1.549s] running install_data
+[1.549s] creating /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/share/ament_index
+[1.550s] creating /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/share/ament_index/resource_index
+[1.550s] creating /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/share/ament_index/resource_index/packages
+[1.550s] copying resource/camera -> /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/share/ament_index/resource_index/packages
+[1.550s] copying package.xml -> /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/share/camera
+[1.551s] running install_egg_info
+[1.554s] Copying ../../build/camera/camera.egg-info to /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/lib/python3.10/site-packages/camera-0.0.0-py3.10.egg-info
+[1.559s] running install_scripts
+[1.590s] writing list of installed files to '/mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/install.log'
+[1.644s] Invoked command in '/mnt/Storage/Hackathons/IIITM/raged-ros2/src/camera' returned '0': PS1=
+\[[38;2;49;50;68m\]\[[48;2;49;50;68;38;2;205;214;244m\]󰕈 joel (Ubuntu 22.04) \[[48;2;250;179;135;38;2;49;50;68m\]\[[38;2;24;24;37m\] …/raged-ros2 \[[48;2;166;227;161;38;2;250;179;135m\]\[[38;2;30;30;46m\]  main !?⇡ \[[48;2;148;226;213;38;2;166;227;161m\]\[[48;2;137;180;250;38;2;148;226;213m\]\[[45;38;2;137;180;250m\]\[[38;2;24;24;37m\]  13:42 \[[0m\]\[[35m\] \[[0m\]
+\[[1;38;2;166;227;161m\]\[[0m\] PYTHONPATH=/mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera build --build-base /mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/build install --record /mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/install.log --single-version-externally-managed install_data

@@ -1,0 +1,126 @@
+[0.000000] (-) TimerEvent: {}
+[0.000246] (camera) JobQueued: {'identifier': 'camera', 'dependencies': OrderedDict()}
+[0.000363] (control) JobQueued: {'identifier': 'control', 'dependencies': OrderedDict()}
+[0.000466] (website) JobQueued: {'identifier': 'website', 'dependencies': OrderedDict()}
+[0.000542] (camera) JobStarted: {'identifier': 'camera'}
+[0.013327] (control) JobStarted: {'identifier': 'control'}
+[0.020168] (website) JobStarted: {'identifier': 'website'}
+[0.099262] (-) TimerEvent: {}
+[0.199796] (-) TimerEvent: {}
+[0.300267] (-) TimerEvent: {}
+[0.400778] (-) TimerEvent: {}
+[0.501202] (-) TimerEvent: {}
+[0.601672] (-) TimerEvent: {}
+[0.702119] (-) TimerEvent: {}
+[0.802495] (-) TimerEvent: {}
+[0.902974] (-) TimerEvent: {}
+[1.003335] (-) TimerEvent: {}
+[1.103763] (-) TimerEvent: {}
+[1.204200] (-) TimerEvent: {}
+[1.246745] (website) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/website', 'build', '--build-base', '/mnt/Storage/Hackathons/IIITM/raged-ros2/build/website/build', 'install', '--record', '/mnt/Storage/Hackathons/IIITM/raged-ros2/build/website/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/mnt/Storage/Hackathons/IIITM/raged-ros2/src/website', 'env': {'MAIL': '/var/mail/joel', 'HYPRLAND_CMD': 'Hyprland', 'USER': 'joel', 'HYPRLAND_INSTANCE_SIGNATURE': '9958d297641b5c84dcff93f9039d80a5ad37ab00_1750076727_112436302', 'STARSHIP_SHELL': 'bash', 'HOSTNAME': 'archlinux', 'XDG_SESSION_TYPE': 'wayland', 'KITTY_SHELL_INTEGRATION': 'enabled', 'XCURSOR_SIZE': '24', 'XDG_CACHE_HOME': '/home/joel/.cache', 'SHLVL': '3', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/joel', 'TERMINFO': '/usr/lib/kitty/terminfo', 'MOZ_ENABLE_WAYLAND': '1', 'OLDPWD': '/mnt/Storage/Hackathons/IIITM/raged-ros2/src', 'DESKTOP_SESSION': 'hyprland', 'KITTY_INSTALLATION_DIR': '/usr/lib/kitty', 'ROS_PYTHON_VERSION': '3', 'PS1': '\n\\[\x1b[38;2;49;50;68m\\]\ue0b6\\[\x1b[48;2;49;50;68;38;2;205;214;244m\\]\U000f0548 joel (Ubuntu 22.04) \\[\x1b[48;2;250;179;135;38;2;49;50;68m\\]\ue0b0\\[\x1b[38;2;24;24;37m\\] …/raged-ros2 \\[\x1b[48;2;166;227;161;38;2;250;179;135m\\]\ue0b0\\[\x1b[38;2;30;30;46m\\] \uf418 main !?⇡ \\[\x1b[48;2;148;226;213;38;2;166;227;161m\\]\ue0b0\\[\x1b[48;2;137;180;250;38;2;148;226;213m\\]\ue0b0\\[\x1b[45;38;2;137;180;250m\\]\ue0b0\\[\x1b[38;2;24;24;37m\\] \uf43a 13:42 \\[\x1b[0m\\]\\[\x1b[35m\\]\ue0b4 \\[\x1b[0m\\]\n\\[\x1b[1;38;2;166;227;161m\\]\uf432\\[\x1b[0m\\]', 'KITTY_PID': '21165', 'CONTAINER_LABEL': '(Ubuntu 22.04)', 'DISTROBOX_ENTER_PATH': '/usr/bin/distrobox-enter', 'XDG_STATE_HOME': '/home/joel/.local/state', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'container': 'docker', 'WAYLAND_DISPLAY': 'wayland-1', 'ROS_DISTRO': 'humble', 'LOGNAME': 'joel', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERMINFO_DIRS': '/usr/share/terminfo:/run/host/usr/share/terminfo', 'USERNAME': 'joel', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': 'c9', 'ROS_LOCALHOST_ONLY': '0', 'HISTCONTROL': 'ignoreboth', 'HL_INITIAL_WORKSPACE_TOKEN': '8d682a1b-78f1-464c-ac3a-cc2a01acd983', 'PATH': '/opt/ros/humble/bin:/home/joel/.local/bin:/home/joel/.local/personal_scripts:/home/joel/.local/share/gem/ruby/3.4.0/bin:/mnt/Storage/rom/extract/VBiosFinder-master/rom-parser:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'GDM_LANG': 'en_US.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'HYPRCURSOR_SIZE': '24', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Hyprland', 'XDG_DATA_HOME': '/home/joel/.local/share', 'XDG_CONFIG_HOME': '/home/joel/.config', 'XDG_SESSION_DESKTOP': 'hyprland', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/usr/bin/bash', 'GDMSESSION': 'hyprland', 'KITTY_WINDOW_ID': '1', 'PWD': '/mnt/Storage/Hackathons/IIITM/raged-ros2/build/website', 'CONTAINER_ID': 'Ubuntu_22.04', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg', 'XDG_BACKEND': 'wayland', 'XDG_DATA_DIRS': '/home/joel/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/usr/local/share:/usr/share', 'STARSHIP_SESSION_KEY': '1366565264645161', 'PYTHONPATH': '/mnt/Storage/Hackathons/IIITM/raged-ros2/build/website/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/Storage/Hackathons/IIITM/raged-ros2/install/website/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/joel/.local/py_pkgs/Python_3.13.3', 'COLCON': '1'}, 'shell': False}
+[1.252976] (control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/control', 'build', '--build-base', '/mnt/Storage/Hackathons/IIITM/raged-ros2/build/control/build', 'install', '--record', '/mnt/Storage/Hackathons/IIITM/raged-ros2/build/control/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/mnt/Storage/Hackathons/IIITM/raged-ros2/src/control', 'env': {'MAIL': '/var/mail/joel', 'HYPRLAND_CMD': 'Hyprland', 'USER': 'joel', 'HYPRLAND_INSTANCE_SIGNATURE': '9958d297641b5c84dcff93f9039d80a5ad37ab00_1750076727_112436302', 'STARSHIP_SHELL': 'bash', 'HOSTNAME': 'archlinux', 'XDG_SESSION_TYPE': 'wayland', 'KITTY_SHELL_INTEGRATION': 'enabled', 'XCURSOR_SIZE': '24', 'XDG_CACHE_HOME': '/home/joel/.cache', 'SHLVL': '3', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/joel', 'TERMINFO': '/usr/lib/kitty/terminfo', 'MOZ_ENABLE_WAYLAND': '1', 'OLDPWD': '/mnt/Storage/Hackathons/IIITM/raged-ros2/src', 'DESKTOP_SESSION': 'hyprland', 'KITTY_INSTALLATION_DIR': '/usr/lib/kitty', 'ROS_PYTHON_VERSION': '3', 'PS1': '\n\\[\x1b[38;2;49;50;68m\\]\ue0b6\\[\x1b[48;2;49;50;68;38;2;205;214;244m\\]\U000f0548 joel (Ubuntu 22.04) \\[\x1b[48;2;250;179;135;38;2;49;50;68m\\]\ue0b0\\[\x1b[38;2;24;24;37m\\] …/raged-ros2 \\[\x1b[48;2;166;227;161;38;2;250;179;135m\\]\ue0b0\\[\x1b[38;2;30;30;46m\\] \uf418 main !?⇡ \\[\x1b[48;2;148;226;213;38;2;166;227;161m\\]\ue0b0\\[\x1b[48;2;137;180;250;38;2;148;226;213m\\]\ue0b0\\[\x1b[45;38;2;137;180;250m\\]\ue0b0\\[\x1b[38;2;24;24;37m\\] \uf43a 13:42 \\[\x1b[0m\\]\\[\x1b[35m\\]\ue0b4 \\[\x1b[0m\\]\n\\[\x1b[1;38;2;166;227;161m\\]\uf432\\[\x1b[0m\\]', 'KITTY_PID': '21165', 'CONTAINER_LABEL': '(Ubuntu 22.04)', 'DISTROBOX_ENTER_PATH': '/usr/bin/distrobox-enter', 'XDG_STATE_HOME': '/home/joel/.local/state', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'container': 'docker', 'WAYLAND_DISPLAY': 'wayland-1', 'ROS_DISTRO': 'humble', 'LOGNAME': 'joel', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERMINFO_DIRS': '/usr/share/terminfo:/run/host/usr/share/terminfo', 'USERNAME': 'joel', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': 'c9', 'ROS_LOCALHOST_ONLY': '0', 'HISTCONTROL': 'ignoreboth', 'HL_INITIAL_WORKSPACE_TOKEN': '8d682a1b-78f1-464c-ac3a-cc2a01acd983', 'PATH': '/opt/ros/humble/bin:/home/joel/.local/bin:/home/joel/.local/personal_scripts:/home/joel/.local/share/gem/ruby/3.4.0/bin:/mnt/Storage/rom/extract/VBiosFinder-master/rom-parser:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'GDM_LANG': 'en_US.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'HYPRCURSOR_SIZE': '24', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Hyprland', 'XDG_DATA_HOME': '/home/joel/.local/share', 'XDG_CONFIG_HOME': '/home/joel/.config', 'XDG_SESSION_DESKTOP': 'hyprland', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/usr/bin/bash', 'GDMSESSION': 'hyprland', 'KITTY_WINDOW_ID': '1', 'PWD': '/mnt/Storage/Hackathons/IIITM/raged-ros2/build/control', 'CONTAINER_ID': 'Ubuntu_22.04', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg', 'XDG_BACKEND': 'wayland', 'XDG_DATA_DIRS': '/home/joel/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/usr/local/share:/usr/share', 'STARSHIP_SESSION_KEY': '1366565264645161', 'PYTHONPATH': '/mnt/Storage/Hackathons/IIITM/raged-ros2/build/control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/Storage/Hackathons/IIITM/raged-ros2/install/control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/joel/.local/py_pkgs/Python_3.13.3', 'COLCON': '1'}, 'shell': False}
+[1.258139] (camera) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/camera', 'build', '--build-base', '/mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/build', 'install', '--record', '/mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/mnt/Storage/Hackathons/IIITM/raged-ros2/src/camera', 'env': {'MAIL': '/var/mail/joel', 'HYPRLAND_CMD': 'Hyprland', 'USER': 'joel', 'HYPRLAND_INSTANCE_SIGNATURE': '9958d297641b5c84dcff93f9039d80a5ad37ab00_1750076727_112436302', 'STARSHIP_SHELL': 'bash', 'HOSTNAME': 'archlinux', 'XDG_SESSION_TYPE': 'wayland', 'KITTY_SHELL_INTEGRATION': 'enabled', 'XCURSOR_SIZE': '24', 'XDG_CACHE_HOME': '/home/joel/.cache', 'SHLVL': '3', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/joel', 'TERMINFO': '/usr/lib/kitty/terminfo', 'MOZ_ENABLE_WAYLAND': '1', 'OLDPWD': '/mnt/Storage/Hackathons/IIITM/raged-ros2/src', 'DESKTOP_SESSION': 'hyprland', 'KITTY_INSTALLATION_DIR': '/usr/lib/kitty', 'ROS_PYTHON_VERSION': '3', 'PS1': '\n\\[\x1b[38;2;49;50;68m\\]\ue0b6\\[\x1b[48;2;49;50;68;38;2;205;214;244m\\]\U000f0548 joel (Ubuntu 22.04) \\[\x1b[48;2;250;179;135;38;2;49;50;68m\\]\ue0b0\\[\x1b[38;2;24;24;37m\\] …/raged-ros2 \\[\x1b[48;2;166;227;161;38;2;250;179;135m\\]\ue0b0\\[\x1b[38;2;30;30;46m\\] \uf418 main !?⇡ \\[\x1b[48;2;148;226;213;38;2;166;227;161m\\]\ue0b0\\[\x1b[48;2;137;180;250;38;2;148;226;213m\\]\ue0b0\\[\x1b[45;38;2;137;180;250m\\]\ue0b0\\[\x1b[38;2;24;24;37m\\] \uf43a 13:42 \\[\x1b[0m\\]\\[\x1b[35m\\]\ue0b4 \\[\x1b[0m\\]\n\\[\x1b[1;38;2;166;227;161m\\]\uf432\\[\x1b[0m\\]', 'KITTY_PID': '21165', 'CONTAINER_LABEL': '(Ubuntu 22.04)', 'DISTROBOX_ENTER_PATH': '/usr/bin/distrobox-enter', 'XDG_STATE_HOME': '/home/joel/.local/state', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'container': 'docker', 'WAYLAND_DISPLAY': 'wayland-1', 'ROS_DISTRO': 'humble', 'LOGNAME': 'joel', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERMINFO_DIRS': '/usr/share/terminfo:/run/host/usr/share/terminfo', 'USERNAME': 'joel', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': 'c9', 'ROS_LOCALHOST_ONLY': '0', 'HISTCONTROL': 'ignoreboth', 'HL_INITIAL_WORKSPACE_TOKEN': '8d682a1b-78f1-464c-ac3a-cc2a01acd983', 'PATH': '/opt/ros/humble/bin:/home/joel/.local/bin:/home/joel/.local/personal_scripts:/home/joel/.local/share/gem/ruby/3.4.0/bin:/mnt/Storage/rom/extract/VBiosFinder-master/rom-parser:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'GDM_LANG': 'en_US.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'HYPRCURSOR_SIZE': '24', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Hyprland', 'XDG_DATA_HOME': '/home/joel/.local/share', 'XDG_CONFIG_HOME': '/home/joel/.config', 'XDG_SESSION_DESKTOP': 'hyprland', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/usr/bin/bash', 'GDMSESSION': 'hyprland', 'KITTY_WINDOW_ID': '1', 'PWD': '/mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera', 'CONTAINER_ID': 'Ubuntu_22.04', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg', 'XDG_BACKEND': 'wayland', 'XDG_DATA_DIRS': '/home/joel/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/usr/local/share:/usr/share', 'STARSHIP_SESSION_KEY': '1366565264645161', 'PYTHONPATH': '/mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/joel/.local/py_pkgs/Python_3.13.3', 'COLCON': '1'}, 'shell': False}
+[1.304301] (-) TimerEvent: {}
+[1.404787] (-) TimerEvent: {}
+[1.505264] (-) TimerEvent: {}
+[1.524812] (website) StdoutLine: {'line': b'running egg_info\n'}
+[1.525477] (website) StdoutLine: {'line': b'creating ../../build/website/website.egg-info\n'}
+[1.525948] (website) StdoutLine: {'line': b'writing ../../build/website/website.egg-info/PKG-INFO\n'}
+[1.526831] (website) StdoutLine: {'line': b'writing dependency_links to ../../build/website/website.egg-info/dependency_links.txt\n'}
+[1.527294] (website) StdoutLine: {'line': b'writing entry points to ../../build/website/website.egg-info/entry_points.txt\n'}
+[1.527656] (website) StdoutLine: {'line': b'writing requirements to ../../build/website/website.egg-info/requires.txt\n'}
+[1.527958] (website) StdoutLine: {'line': b'writing top-level names to ../../build/website/website.egg-info/top_level.txt\n'}
+[1.528362] (website) StdoutLine: {'line': b"writing manifest file '../../build/website/website.egg-info/SOURCES.txt'\n"}
+[1.532102] (website) StdoutLine: {'line': b"reading manifest file '../../build/website/website.egg-info/SOURCES.txt'\n"}
+[1.533496] (camera) StdoutLine: {'line': b'running egg_info\n'}
+[1.534199] (website) StdoutLine: {'line': b"writing manifest file '../../build/website/website.egg-info/SOURCES.txt'\n"}
+[1.534553] (website) StdoutLine: {'line': b'running build\n'}
+[1.534860] (website) StdoutLine: {'line': b'running build_py\n'}
+[1.535253] (camera) StdoutLine: {'line': b'creating ../../build/camera/camera.egg-info\n'}
+[1.535565] (camera) StdoutLine: {'line': b'writing ../../build/camera/camera.egg-info/PKG-INFO\n'}
+[1.535918] (website) StdoutLine: {'line': b'creating /mnt/Storage/Hackathons/IIITM/raged-ros2/build/website/build\n'}
+[1.536390] (website) StdoutLine: {'line': b'creating /mnt/Storage/Hackathons/IIITM/raged-ros2/build/website/build/lib\n'}
+[1.536772] (website) StdoutLine: {'line': b'creating /mnt/Storage/Hackathons/IIITM/raged-ros2/build/website/build/lib/website\n'}
+[1.537064] (website) StdoutLine: {'line': b'copying website/__init__.py -> /mnt/Storage/Hackathons/IIITM/raged-ros2/build/website/build/lib/website\n'}
+[1.537376] (camera) StdoutLine: {'line': b'writing dependency_links to ../../build/camera/camera.egg-info/dependency_links.txt\n'}
+[1.537612] (website) StdoutLine: {'line': b'running install\n'}
+[1.537883] (camera) StdoutLine: {'line': b'writing entry points to ../../build/camera/camera.egg-info/entry_points.txt\n'}
+[1.538115] (camera) StdoutLine: {'line': b'writing requirements to ../../build/camera/camera.egg-info/requires.txt\n'}
+[1.538419] (website) StdoutLine: {'line': b'running install_lib\n'}
+[1.538677] (camera) StdoutLine: {'line': b'writing top-level names to ../../build/camera/camera.egg-info/top_level.txt\n'}
+[1.538910] (camera) StdoutLine: {'line': b"writing manifest file '../../build/camera/camera.egg-info/SOURCES.txt'\n"}
+[1.539125] (website) StdoutLine: {'line': b'creating /mnt/Storage/Hackathons/IIITM/raged-ros2/install/website/lib/python3.10/site-packages/website\n'}
+[1.539362] (website) StdoutLine: {'line': b'copying /mnt/Storage/Hackathons/IIITM/raged-ros2/build/website/build/lib/website/__init__.py -> /mnt/Storage/Hackathons/IIITM/raged-ros2/install/website/lib/python3.10/site-packages/website\n'}
+[1.539619] (website) StdoutLine: {'line': b'byte-compiling /mnt/Storage/Hackathons/IIITM/raged-ros2/install/website/lib/python3.10/site-packages/website/__init__.py to __init__.cpython-310.pyc\n'}
+[1.540047] (camera) StdoutLine: {'line': b"reading manifest file '../../build/camera/camera.egg-info/SOURCES.txt'\n"}
+[1.540420] (website) StdoutLine: {'line': b'running install_data\n'}
+[1.540757] (website) StdoutLine: {'line': b'creating /mnt/Storage/Hackathons/IIITM/raged-ros2/install/website/share/ament_index\n'}
+[1.541077] (website) StdoutLine: {'line': b'creating /mnt/Storage/Hackathons/IIITM/raged-ros2/install/website/share/ament_index/resource_index\n'}
+[1.541373] (website) StdoutLine: {'line': b'creating /mnt/Storage/Hackathons/IIITM/raged-ros2/install/website/share/ament_index/resource_index/packages\n'}
+[1.541707] (website) StdoutLine: {'line': b'copying resource/website -> /mnt/Storage/Hackathons/IIITM/raged-ros2/install/website/share/ament_index/resource_index/packages\n'}
+[1.541989] (website) StdoutLine: {'line': b'copying package.xml -> /mnt/Storage/Hackathons/IIITM/raged-ros2/install/website/share/website\n'}
+[1.542280] (website) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.542534] (camera) StdoutLine: {'line': b"writing manifest file '../../build/camera/camera.egg-info/SOURCES.txt'\n"}
+[1.542843] (camera) StdoutLine: {'line': b'running build\n'}
+[1.543160] (camera) StdoutLine: {'line': b'running build_py\n'}
+[1.543438] (camera) StdoutLine: {'line': b'creating /mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/build\n'}
+[1.543781] (camera) StdoutLine: {'line': b'creating /mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/build/lib\n'}
+[1.544082] (camera) StdoutLine: {'line': b'creating /mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/build/lib/camera\n'}
+[1.544359] (camera) StdoutLine: {'line': b'copying camera/__init__.py -> /mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/build/lib/camera\n'}
+[1.544600] (camera) StdoutLine: {'line': b'running install\n'}
+[1.544885] (camera) StdoutLine: {'line': b'running install_lib\n'}
+[1.545170] (website) StdoutLine: {'line': b'Copying ../../build/website/website.egg-info to /mnt/Storage/Hackathons/IIITM/raged-ros2/install/website/lib/python3.10/site-packages/website-0.0.0-py3.10.egg-info\n'}
+[1.546522] (camera) StdoutLine: {'line': b'creating /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/lib/python3.10/site-packages/camera\n'}
+[1.546825] (camera) StdoutLine: {'line': b'copying /mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/build/lib/camera/__init__.py -> /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/lib/python3.10/site-packages/camera\n'}
+[1.548327] (camera) StdoutLine: {'line': b'byte-compiling /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/lib/python3.10/site-packages/camera/__init__.py to __init__.cpython-310.pyc\n'}
+[1.549065] (website) StdoutLine: {'line': b'running install_scripts\n'}
+[1.549365] (camera) StdoutLine: {'line': b'running install_data\n'}
+[1.549659] (camera) StdoutLine: {'line': b'creating /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/share/ament_index\n'}
+[1.549946] (camera) StdoutLine: {'line': b'creating /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/share/ament_index/resource_index\n'}
+[1.550230] (camera) StdoutLine: {'line': b'creating /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/share/ament_index/resource_index/packages\n'}
+[1.550461] (camera) StdoutLine: {'line': b'copying resource/camera -> /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/share/ament_index/resource_index/packages\n'}
+[1.550684] (camera) StdoutLine: {'line': b'copying package.xml -> /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/share/camera\n'}
+[1.551158] (camera) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.554179] (camera) StdoutLine: {'line': b'Copying ../../build/camera/camera.egg-info to /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/lib/python3.10/site-packages/camera-0.0.0-py3.10.egg-info\n'}
+[1.558910] (camera) StdoutLine: {'line': b'running install_scripts\n'}
+[1.565551] (control) StdoutLine: {'line': b'running egg_info\n'}
+[1.566261] (control) StdoutLine: {'line': b'creating ../../build/control/control.egg-info\n'}
+[1.566682] (control) StdoutLine: {'line': b'writing ../../build/control/control.egg-info/PKG-INFO\n'}
+[1.567202] (control) StdoutLine: {'line': b'writing dependency_links to ../../build/control/control.egg-info/dependency_links.txt\n'}
+[1.567585] (control) StdoutLine: {'line': b'writing entry points to ../../build/control/control.egg-info/entry_points.txt\n'}
+[1.567923] (control) StdoutLine: {'line': b'writing requirements to ../../build/control/control.egg-info/requires.txt\n'}
+[1.568204] (control) StdoutLine: {'line': b'writing top-level names to ../../build/control/control.egg-info/top_level.txt\n'}
+[1.568458] (control) StdoutLine: {'line': b"writing manifest file '../../build/control/control.egg-info/SOURCES.txt'\n"}
+[1.571326] (control) StdoutLine: {'line': b"reading manifest file '../../build/control/control.egg-info/SOURCES.txt'\n"}
+[1.573343] (control) StdoutLine: {'line': b"writing manifest file '../../build/control/control.egg-info/SOURCES.txt'\n"}
+[1.573912] (control) StdoutLine: {'line': b'running build\n'}
+[1.574241] (control) StdoutLine: {'line': b'running build_py\n'}
+[1.574577] (control) StdoutLine: {'line': b'creating /mnt/Storage/Hackathons/IIITM/raged-ros2/build/control/build\n'}
+[1.574948] (control) StdoutLine: {'line': b'creating /mnt/Storage/Hackathons/IIITM/raged-ros2/build/control/build/lib\n'}
+[1.575314] (control) StdoutLine: {'line': b'creating /mnt/Storage/Hackathons/IIITM/raged-ros2/build/control/build/lib/control\n'}
+[1.575614] (website) StdoutLine: {'line': b"writing list of installed files to '/mnt/Storage/Hackathons/IIITM/raged-ros2/build/website/install.log'\n"}
+[1.575955] (control) StdoutLine: {'line': b'copying control/__init__.py -> /mnt/Storage/Hackathons/IIITM/raged-ros2/build/control/build/lib/control\n'}
+[1.576271] (control) StdoutLine: {'line': b'running install\n'}
+[1.576575] (control) StdoutLine: {'line': b'running install_lib\n'}
+[1.577272] (control) StdoutLine: {'line': b'creating /mnt/Storage/Hackathons/IIITM/raged-ros2/install/control/lib/python3.10/site-packages/control\n'}
+[1.577662] (control) StdoutLine: {'line': b'copying /mnt/Storage/Hackathons/IIITM/raged-ros2/build/control/build/lib/control/__init__.py -> /mnt/Storage/Hackathons/IIITM/raged-ros2/install/control/lib/python3.10/site-packages/control\n'}
+[1.578583] (control) StdoutLine: {'line': b'byte-compiling /mnt/Storage/Hackathons/IIITM/raged-ros2/install/control/lib/python3.10/site-packages/control/__init__.py to __init__.cpython-310.pyc\n'}
+[1.579218] (control) StdoutLine: {'line': b'running install_data\n'}
+[1.579575] (control) StdoutLine: {'line': b'creating /mnt/Storage/Hackathons/IIITM/raged-ros2/install/control/share/ament_index\n'}
+[1.579919] (control) StdoutLine: {'line': b'creating /mnt/Storage/Hackathons/IIITM/raged-ros2/install/control/share/ament_index/resource_index\n'}
+[1.580302] (control) StdoutLine: {'line': b'creating /mnt/Storage/Hackathons/IIITM/raged-ros2/install/control/share/ament_index/resource_index/packages\n'}
+[1.580660] (control) StdoutLine: {'line': b'copying resource/control -> /mnt/Storage/Hackathons/IIITM/raged-ros2/install/control/share/ament_index/resource_index/packages\n'}
+[1.580975] (control) StdoutLine: {'line': b'copying package.xml -> /mnt/Storage/Hackathons/IIITM/raged-ros2/install/control/share/control\n'}
+[1.581293] (control) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.583308] (control) StdoutLine: {'line': b'Copying ../../build/control/control.egg-info to /mnt/Storage/Hackathons/IIITM/raged-ros2/install/control/lib/python3.10/site-packages/control-0.0.0-py3.10.egg-info\n'}
+[1.587131] (control) StdoutLine: {'line': b'running install_scripts\n'}
+[1.590506] (camera) StdoutLine: {'line': b"writing list of installed files to '/mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/install.log'\n"}
+[1.605416] (-) TimerEvent: {}
+[1.610472] (website) CommandEnded: {'returncode': 0}
+[1.624294] (control) StdoutLine: {'line': b"writing list of installed files to '/mnt/Storage/Hackathons/IIITM/raged-ros2/build/control/install.log'\n"}
+[1.640637] (website) JobEnded: {'identifier': 'website', 'rc': 0}
+[1.643557] (camera) CommandEnded: {'returncode': 0}
+[1.664302] (camera) JobEnded: {'identifier': 'camera', 'rc': 0}
+[1.666496] (control) CommandEnded: {'returncode': 0}
+[1.681705] (control) JobEnded: {'identifier': 'control', 'rc': 0}
+[1.683331] (-) EventReactorShutdown: {}

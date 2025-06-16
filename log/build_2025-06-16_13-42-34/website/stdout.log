@@ -1,0 +1,31 @@
+running egg_info
+creating ../../build/website/website.egg-info
+writing ../../build/website/website.egg-info/PKG-INFO
+writing dependency_links to ../../build/website/website.egg-info/dependency_links.txt
+writing entry points to ../../build/website/website.egg-info/entry_points.txt
+writing requirements to ../../build/website/website.egg-info/requires.txt
+writing top-level names to ../../build/website/website.egg-info/top_level.txt
+writing manifest file '../../build/website/website.egg-info/SOURCES.txt'
+reading manifest file '../../build/website/website.egg-info/SOURCES.txt'
+writing manifest file '../../build/website/website.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /mnt/Storage/Hackathons/IIITM/raged-ros2/build/website/build
+creating /mnt/Storage/Hackathons/IIITM/raged-ros2/build/website/build/lib
+creating /mnt/Storage/Hackathons/IIITM/raged-ros2/build/website/build/lib/website
+copying website/__init__.py -> /mnt/Storage/Hackathons/IIITM/raged-ros2/build/website/build/lib/website
+running install
+running install_lib
+creating /mnt/Storage/Hackathons/IIITM/raged-ros2/install/website/lib/python3.10/site-packages/website
+copying /mnt/Storage/Hackathons/IIITM/raged-ros2/build/website/build/lib/website/__init__.py -> /mnt/Storage/Hackathons/IIITM/raged-ros2/install/website/lib/python3.10/site-packages/website
+byte-compiling /mnt/Storage/Hackathons/IIITM/raged-ros2/install/website/lib/python3.10/site-packages/website/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /mnt/Storage/Hackathons/IIITM/raged-ros2/install/website/share/ament_index
+creating /mnt/Storage/Hackathons/IIITM/raged-ros2/install/website/share/ament_index/resource_index
+creating /mnt/Storage/Hackathons/IIITM/raged-ros2/install/website/share/ament_index/resource_index/packages
+copying resource/website -> /mnt/Storage/Hackathons/IIITM/raged-ros2/install/website/share/ament_index/resource_index/packages
+copying package.xml -> /mnt/Storage/Hackathons/IIITM/raged-ros2/install/website/share/website
+running install_egg_info
+Copying ../../build/website/website.egg-info to /mnt/Storage/Hackathons/IIITM/raged-ros2/install/website/lib/python3.10/site-packages/website-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/mnt/Storage/Hackathons/IIITM/raged-ros2/build/website/install.log'

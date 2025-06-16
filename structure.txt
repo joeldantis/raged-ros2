@@ -1,0 +1,16 @@
+-Packages-
+camera
+control
+website
+
+-Nodes-
+camera
+ml
+position
+
+auto
+manual
+communication
+
+waste_data
+check_user
