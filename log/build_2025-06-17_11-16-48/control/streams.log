@@ -1,0 +1,24 @@
+[1.454s] Invoking command in '/mnt/Storage/Hackathons/IIITM/raged-ros2/src/control': PS1=
+\[[38;2;49;50;68m\]\[[48;2;49;50;68;38;2;205;214;244m\]󰕈 joel (Ubuntu 22.04) \[[48;2;250;179;135;38;2;49;50;68m\]\[[38;2;24;24;37m\] …/raged-ros2 \[[48;2;166;227;161;38;2;250;179;135m\]\[[38;2;30;30;46m\]  main ! \[[48;2;148;226;213;38;2;166;227;161m\]\[[38;2;30;30;46m\]  v3.10.12 \[[48;2;137;180;250;38;2;148;226;213m\]\[[45;38;2;137;180;250m\]\[[38;2;24;24;37m\]  11:15 \[[0m\]\[[35m\] \[[0m\]
+\[[1;38;2;243;139;168m\]\[[0m\] PYTHONPATH=/mnt/Storage/Hackathons/IIITM/raged-ros2/build/control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/Storage/Hackathons/IIITM/raged-ros2/install/control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/control build --build-base /mnt/Storage/Hackathons/IIITM/raged-ros2/build/control/build install --record /mnt/Storage/Hackathons/IIITM/raged-ros2/build/control/install.log --single-version-externally-managed install_data
+[1.832s] running egg_info
+[1.833s] writing ../../build/control/control.egg-info/PKG-INFO
+[1.834s] writing dependency_links to ../../build/control/control.egg-info/dependency_links.txt
+[1.834s] writing entry points to ../../build/control/control.egg-info/entry_points.txt
+[1.835s] writing requirements to ../../build/control/control.egg-info/requires.txt
+[1.836s] writing top-level names to ../../build/control/control.egg-info/top_level.txt
+[1.839s] reading manifest file '../../build/control/control.egg-info/SOURCES.txt'
+[1.843s] writing manifest file '../../build/control/control.egg-info/SOURCES.txt'
+[1.843s] running build
+[1.844s] running build_py
+[1.845s] running install
+[1.847s] running install_lib
+[1.850s] running install_data
+[1.851s] running install_egg_info
+[1.855s] removing '/mnt/Storage/Hackathons/IIITM/raged-ros2/install/control/lib/python3.10/site-packages/control-0.0.0-py3.10.egg-info' (and everything under it)
+[1.856s] Copying ../../build/control/control.egg-info to /mnt/Storage/Hackathons/IIITM/raged-ros2/install/control/lib/python3.10/site-packages/control-0.0.0-py3.10.egg-info
+[1.861s] running install_scripts
+[1.894s] writing list of installed files to '/mnt/Storage/Hackathons/IIITM/raged-ros2/build/control/install.log'
+[1.939s] Invoked command in '/mnt/Storage/Hackathons/IIITM/raged-ros2/src/control' returned '0': PS1=
+\[[38;2;49;50;68m\]\[[48;2;49;50;68;38;2;205;214;244m\]󰕈 joel (Ubuntu 22.04) \[[48;2;250;179;135;38;2;49;50;68m\]\[[38;2;24;24;37m\] …/raged-ros2 \[[48;2;166;227;161;38;2;250;179;135m\]\[[38;2;30;30;46m\]  main ! \[[48;2;148;226;213;38;2;166;227;161m\]\[[38;2;30;30;46m\]  v3.10.12 \[[48;2;137;180;250;38;2;148;226;213m\]\[[45;38;2;137;180;250m\]\[[38;2;24;24;37m\]  11:15 \[[0m\]\[[35m\] \[[0m\]
+\[[1;38;2;243;139;168m\]\[[0m\] PYTHONPATH=/mnt/Storage/Hackathons/IIITM/raged-ros2/build/control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/Storage/Hackathons/IIITM/raged-ros2/install/control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/control build --build-base /mnt/Storage/Hackathons/IIITM/raged-ros2/build/control/build install --record /mnt/Storage/Hackathons/IIITM/raged-ros2/build/control/install.log --single-version-externally-managed install_data

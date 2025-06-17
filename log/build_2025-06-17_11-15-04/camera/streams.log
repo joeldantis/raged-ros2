@@ -1,0 +1,47 @@
+[1.473s] Invoking command in '/mnt/Storage/Hackathons/IIITM/raged-ros2/src/camera': PS1=
+\[[38;2;49;50;68m\]\[[48;2;49;50;68;38;2;205;214;244m\]󰕈 joel (Ubuntu 22.04) \[[48;2;250;179;135;38;2;49;50;68m\]\[[38;2;24;24;37m\] …/raged-ros2 \[[48;2;166;227;161;38;2;250;179;135m\]\[[38;2;30;30;46m\]  main ✘! \[[48;2;148;226;213;38;2;166;227;161m\]\[[38;2;30;30;46m\]  v3.10.12 \[[48;2;137;180;250;38;2;148;226;213m\]\[[45;38;2;137;180;250m\]\[[38;2;24;24;37m\]  11:14 \[[0m\]\[[35m\] \[[0m\]
+\[[1;38;2;166;227;161m\]\[[0m\] PYTHONPATH=/mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera build --build-base /mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/build install --record /mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/install.log --single-version-externally-managed install_data
+[1.835s] running egg_info
+[1.836s] creating ../../build/camera/camera.egg-info
+[1.837s] writing ../../build/camera/camera.egg-info/PKG-INFO
+[1.837s] writing dependency_links to ../../build/camera/camera.egg-info/dependency_links.txt
+[1.838s] writing entry points to ../../build/camera/camera.egg-info/entry_points.txt
+[1.838s] writing requirements to ../../build/camera/camera.egg-info/requires.txt
+[1.840s] writing top-level names to ../../build/camera/camera.egg-info/top_level.txt
+[1.840s] writing manifest file '../../build/camera/camera.egg-info/SOURCES.txt'
+[1.844s] reading manifest file '../../build/camera/camera.egg-info/SOURCES.txt'
+[1.846s] writing manifest file '../../build/camera/camera.egg-info/SOURCES.txt'
+[1.847s] running build
+[1.847s] running build_py
+[1.848s] creating /mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/build
+[1.848s] creating /mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/build/lib
+[1.848s] creating /mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/build/lib/camera
+[1.849s] copying camera/camera.py -> /mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/build/lib/camera
+[1.849s] copying camera/ml.py -> /mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/build/lib/camera
+[1.849s] copying camera/position.py -> /mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/build/lib/camera
+[1.850s] copying camera/__init__.py -> /mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/build/lib/camera
+[1.850s] running install
+[1.851s] running install_lib
+[1.853s] creating /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/lib/python3.10/site-packages/camera
+[1.854s] copying /mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/build/lib/camera/camera.py -> /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/lib/python3.10/site-packages/camera
+[1.854s] copying /mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/build/lib/camera/ml.py -> /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/lib/python3.10/site-packages/camera
+[1.855s] copying /mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/build/lib/camera/position.py -> /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/lib/python3.10/site-packages/camera
+[1.856s] copying /mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/build/lib/camera/__init__.py -> /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/lib/python3.10/site-packages/camera
+[1.856s] byte-compiling /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/lib/python3.10/site-packages/camera/camera.py to camera.cpython-310.pyc
+[1.858s] byte-compiling /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/lib/python3.10/site-packages/camera/ml.py to ml.cpython-310.pyc
+[1.860s] byte-compiling /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/lib/python3.10/site-packages/camera/position.py to position.cpython-310.pyc
+[1.861s] byte-compiling /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/lib/python3.10/site-packages/camera/__init__.py to __init__.cpython-310.pyc
+[1.862s] running install_data
+[1.862s] creating /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/share/ament_index
+[1.864s] creating /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/share/ament_index/resource_index
+[1.865s] creating /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/share/ament_index/resource_index/packages
+[1.865s] copying resource/camera -> /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/share/ament_index/resource_index/packages
+[1.867s] copying package.xml -> /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/share/camera
+[1.868s] running install_egg_info
+[1.868s] Copying ../../build/camera/camera.egg-info to /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/lib/python3.10/site-packages/camera-0.0.0-py3.10.egg-info
+[1.870s] running install_scripts
+[1.904s] Installing camera script to /mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/lib/camera
+[1.904s] writing list of installed files to '/mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/install.log'
+[1.947s] Invoked command in '/mnt/Storage/Hackathons/IIITM/raged-ros2/src/camera' returned '0': PS1=
+\[[38;2;49;50;68m\]\[[48;2;49;50;68;38;2;205;214;244m\]󰕈 joel (Ubuntu 22.04) \[[48;2;250;179;135;38;2;49;50;68m\]\[[38;2;24;24;37m\] …/raged-ros2 \[[48;2;166;227;161;38;2;250;179;135m\]\[[38;2;30;30;46m\]  main ✘! \[[48;2;148;226;213;38;2;166;227;161m\]\[[38;2;30;30;46m\]  v3.10.12 \[[48;2;137;180;250;38;2;148;226;213m\]\[[45;38;2;137;180;250m\]\[[38;2;24;24;37m\]  11:14 \[[0m\]\[[35m\] \[[0m\]
+\[[1;38;2;166;227;161m\]\[[0m\] PYTHONPATH=/mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/Storage/Hackathons/IIITM/raged-ros2/install/camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera build --build-base /mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/build install --record /mnt/Storage/Hackathons/IIITM/raged-ros2/build/camera/install.log --single-version-externally-managed install_data
