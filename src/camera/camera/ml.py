@@ -63,8 +63,12 @@ class ML(Node):
                 self.detect = 0
 
                 # position = [width, height, distance from center]
-                #position.data = [info['width'], info['height'], info['center_dist']]
-                #class_info.data = info['name']
+                position.data = [info['width'], info['height'], info['center_dist']]
+                class_info.data = info['name']
+
+                # publishing
+                self.pos_pub.publish(position)
+                self.class_pub.publish(class_info)
 
             # Display the image in a window named 'Camera Feed'
             cv2.imshow("Camera Feed", self.cv_image)

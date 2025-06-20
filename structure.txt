@@ -13,7 +13,7 @@ manual
 communication
 
 waste_data
-check_user
+check_user -> run once on start
 
 -Topics-
 image -> image from camera is sent
