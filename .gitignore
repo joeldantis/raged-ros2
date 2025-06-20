@@ -5,3 +5,6 @@ log/
 
 # ignore .venv
 .venv/
+
+# ignore temp.py
+temp.py
