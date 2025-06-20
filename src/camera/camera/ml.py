@@ -20,7 +20,7 @@ class ML(Node):
         # variables
         self.detect = 1
 
-        # Initialize the node with the name 'camera_subscriber'
+        # Initialize the node with the name 'ml'
         super().__init__('ml')
 
         # Subscribers
@@ -28,7 +28,7 @@ class ML(Node):
         self.detect_sub = self.create_subscription(Int32, 'detect', self.detect_callback, 10)
 
         # Publishers
-        self.pos_pub = self.create_publisher(Int32MultiArray, 'position', 10)
+        self.pos_pub = self.create_publisher(String, 'position', 10)
         self.class_pub = self.create_publisher(String, 'class_info', 10)    
 
 
@@ -39,7 +39,7 @@ class ML(Node):
     def image_callback(self, msg):
         global model
 
-        position = Int32MultiArray()
+        position = String()
         class_info = String()
 
         """
@@ -63,7 +63,7 @@ class ML(Node):
                 self.detect = 0
 
                 # position = [width, height, distance from center]
-                position.data = [info['width'], info['height'], info['center_dist']]
+                position.data = json.dumps({'obj_width':info['obj_width'], 'frame_width':info['frame_width']})
                 class_info.data = info['name']
 
                 # publishing
@@ -86,6 +86,8 @@ class ML(Node):
 
 
     def get_largest(self):
+        global model
+
         """
         Finds the bounding box with the largest area from the prediction results of a single frame.
         """
@@ -113,22 +115,23 @@ class ML(Node):
         x1, y1, x2, y2 = big.xyxy[0].tolist() # Convert tensor to list
 
         cls = int(big.cls[0].item()) # Class ID
-        width = x2 - x1
-        height = y2 - y1
+        obj_width = x2 - x1
+        #height = y2 - y1
 
-        _, img_width, _ = self.cv_image.shape
-        frame_center_x = img_width / 2
-        obj_x = width/2
-        center_dist = obj_x - frame_center_x
+        _, frame_width, _ = self.cv_image.shape
+        #frame_center_x = img_width / 2
+        #obj_x = width/2
+        #center_dist = obj_x - frame_center_x
 
-        #class_name = big.class_names.get(cls, f"Unknown_{cls}") # Get class name
+        class_name = model.names[cls]
 
         largest_box = {
-            'width': width,
-            'height': height,
+            'obj_width': obj_width,
+            'frame_width': frame_width,
+            #'height': height,
             #'area': area,
-            #'name' : class_name,
-            'center_dist': center_dist,
+            'name' : class_name,
+            #'center_dist': center_dist,
             'class': cls
             }
         print(largest_box)

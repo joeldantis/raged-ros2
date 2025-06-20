@@ -29,6 +29,7 @@ class_pub -> on the class_info node
 -Subscribers-
 image_sub -> on the image topic
 detect_sub -> on the detect topic
+pos_sub -> on the position topic
 
 -NOTE-
 * Add the following line to the setup.cfg file in your each of your packages:
@@ -36,4 +37,7 @@ detect_sub -> on the detect topic
 [build_scripts]
 executable = /usr/bin/env python3
 
-* This is in order to include the python in your virtual environment
+* This is in order to include the python from your virtual environment
+
+-ISSUES-
+* In Manual mode the position topic will still be recieving data although unsed
