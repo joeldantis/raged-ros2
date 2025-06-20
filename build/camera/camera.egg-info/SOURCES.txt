@@ -12,6 +12,7 @@ camera/__init__.py
 camera/camera.py
 camera/ml.py
 camera/position.py
+camera/test.py
 resource/camera
 test/test_copyright.py
 test/test_flake8.py

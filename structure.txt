@@ -14,3 +14,18 @@ communication
 
 waste_data
 check_user
+
+-Topics-
+image -> image from camera is sent
+detect -> flag sent to pause or play model
+position -> width height and distance from center of frame info sent
+class_info -> class of the object detected is sent
+
+-Publishers-
+image_pub -> on the image topic
+pos_pub -> on the position topic
+class_pub -> on the class_info node
+
+-Subscribers-
+image_sub -> on the image topic
+detect_sub -> on the detect topic

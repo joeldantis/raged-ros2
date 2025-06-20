@@ -12,7 +12,7 @@ class CameraPublisher(Node):
         # Initialize the node with the name 'camera_publisher'
         super().__init__('camera_publisher')
         # Create a publisher for 'image_raw' topic, with a queue size of 10
-        self.publisher_ = self.create_publisher(Image, 'image_raw', 10)
+        self.image_pub = self.create_publisher(Image, 'image', 10)
         # Set up a timer to publish images at approximately 30 Hz
         self.timer = self.create_timer(1.0 / 30.0, self.timer_callback)
         # Initialize CvBridge for converting between OpenCV and ROS images
@@ -39,7 +39,7 @@ class CameraPublisher(Node):
             # The encoding 'bgr8' means 8-bit color image with Blue, Green, Red channels
             ros_image = self.bridge.cv2_to_imgmsg(frame, "bgr8")
             # Publish the ROS Image message
-            self.publisher_.publish(ros_image)
+            self.image_pub.publish(ros_image)
             self.get_logger().info('Publishing image frame')
         else:
             self.get_logger().warn('Failed to capture image frame.')

@@ -1,0 +1,7 @@
+# ignore build install and log files
+build/
+install/
+log/
+
+# ignore .venv
+.venv/
