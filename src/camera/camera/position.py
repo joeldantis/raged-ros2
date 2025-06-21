@@ -3,6 +3,9 @@ from rclpy.node import Node
 from std_msgs.msg import String
 import json
 
+global FOV_x
+FOV_x = 84.0  # degrees
+
 class Posiotion(Node):
     """
     ROS Node that takes the position info from the farme and returns 
@@ -20,7 +23,10 @@ class Posiotion(Node):
         self.pos_sub = self.create_subscription(String,'position',self.position_callback,10)
 
     def position_callback(self, msg):
-        dat = json.load(msg.data)
+        global FOV_x
+        dat = json.loads(msg.data)
+        angle = ((dat['obj_width'] - dat['frame_width'] / 2) / (dat['frame_width'] / 2)) * (FOV_x / 2)
+
         print(dat)
         pass
 

@@ -31,6 +31,9 @@ image_sub -> on the image topic
 detect_sub -> on the detect topic
 pos_sub -> on the position topic
 
+-ARRAY-
+[auto/manual, wheel1, wheel2, wheel3, wheel4, bin_section, collect]
+
 -NOTE-
 * Add the following line to the setup.cfg file in your each of your packages:
 
