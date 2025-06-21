@@ -1,8 +1,9 @@
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Int32MultiArray
+from std_msgs.msg import String
+import json
 
-class PosiotionCalc(Node):
+class Posiotion(Node):
     """
     ROS Node that takes the position info from the farme and returns 
     1. Offset Angle
@@ -16,4 +17,26 @@ class PosiotionCalc(Node):
         # Publishers
 
         # Subscribers
-        self.pos_sub = self.create_subscription(Int32MultiArray,'position',self.position_callback,10)
+        self.pos_sub = self.create_subscription(String,'position',self.position_callback,10)
+
+    def position_callback(self, msg):
+        dat = json.load(msg.data)
+        print(dat)
+        pass
+
+def main(args=None):
+    """
+    Main function for the position node.
+    """
+    rclpy.init(args=args) # Initialize ROS2 client library
+    position = Posiotion() # Create an instance of the position node
+    try:
+        rclpy.spin(position) # Keep the node alive until it's explicitly shut down
+    except KeyboardInterrupt:
+        pass # Handle Ctrl+C gracefully
+    finally:
+        position.destroy_node() # Clean up resources
+        rclpy.shutdown() # Shut down ROS2 client library
+
+if __name__ == '__main__':
+    main()

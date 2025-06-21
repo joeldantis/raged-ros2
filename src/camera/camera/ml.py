@@ -147,7 +147,7 @@ class ML(Node):
 
 def main(args=None):
     """
-    Main function for the camera subscriber node.
+    Main function for the ml node.
     """
     rclpy.init(args=args) # Initialize ROS2 client library
     ml = ML() # Create an instance of the ML node
