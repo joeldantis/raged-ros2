@@ -32,17 +32,56 @@ detect_sub -> on the detect topic
 pos_sub -> on the position topic
 
 -ARRAY-
+
+* the array for auto and manual will be slightly different
+
+* For auto:
 [auto/manual, ahead/rotate, bin_section]
-[2 states, 3 states, 4 states, 2 states]
+[2 states, 3 states, 4 states]
 [
     auto/manual:
     1 is auto
     0 is manual,
 
-    ahead/rotate
+    ahead/rotate:
     0 is do nothing and go to next
     1 is go ahead and return to ml node
     2 is rotate and return to ml node,
+
+    bin_section:
+    1 is section 1
+    2 is section 2
+    3 is section 3
+    4 is section 4,
+]
+
+* For manual:
+[auto/manual, action]
+[2 states, 3 states, 4 states]
+[
+    auto/manual:
+    1 is auto
+    0 is manual,
+
+    action:
+    w -> forward
+    a -> left
+    s -> back
+    d -> rigth
+
+    1 -> section 1 of bin
+    2 -> section 2 of bin
+    3 -> section 3 of bin
+    4 -> section 4 of bin
+
+    l -> lid open
+    k -> lid close
+
+    z -> left claw open
+    x -> left claw close
+
+    c -> right claw open
+    v -> right claw close
 
     bin_section:
     1 is section 1
