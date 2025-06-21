@@ -37,7 +37,7 @@ pos_sub -> on the position topic
 * the array for auto and manual will be slightly different
 
 * For auto:
-[auto/manual, ahead/rotate, duration of action, bin_section]
+[auto/manual, ahead/rotate, distance or angle value, bin_section]
 [2 states, 3 states, 4 states]
 [
     auto/manual:
@@ -49,8 +49,8 @@ pos_sub -> on the position topic
     1 is go ahead and return to ml node
     2 is rotate and return to ml node,
 
-    duration of action:
-    float value of delay
+    distance or angle value:
+    float value of distance or angle
 
     bin_section:
     0 is skip
