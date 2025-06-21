@@ -18,6 +18,7 @@ class Auto(Node):
         super().__init__('auto')
 
         # Publishers
+        self.control = self.create_publisher(String, 'control',10)
 
         # Subscribers
         self.pos_sub = self.create_subscription(String,'position',self.position_callback,10)
@@ -25,12 +26,16 @@ class Auto(Node):
     def position_callback(self, msg):
         global FOV_x
         dat = json.loads(msg.data)
+        msg = String()
+
         print(dat)
         angle = ((dat['obj_width'] - dat['frame_width'] / 2) / (dat['frame_width'] / 2)) * (FOV_x / 2)
-
+        msg.data = json.dumps([2,angle])
+        
         if angle < 1:
             if dat['frame%'] >= 70:
                 #collect
+                msg.data = json.dumps([0,int(dat['bin_section'])])
                 pass
 
         pass

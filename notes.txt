@@ -37,7 +37,7 @@ pos_sub -> on the position topic
 * the array for auto and manual will be slightly different
 
 * For auto:
-[auto/manual, ahead/rotate, distance or angle value, bin_section]
+[auto/manual, ahead/rotate, (distance or angle value) or bin_section]
 [2 states, 3 states, 4 states]
 [
     auto/manual:
@@ -49,9 +49,13 @@ pos_sub -> on the position topic
     1 is go ahead and return to ml node
     2 is rotate and return to ml node,
 
+    (if ahead/rotate is not 0)
     distance or angle value:
     float value of distance or angle
 
+    OR
+
+    (if ahead/rotate is 0)
     bin_section:
     0 is skip
     1 is section 1
