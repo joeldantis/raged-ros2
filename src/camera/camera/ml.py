@@ -65,7 +65,8 @@ class ML(Node):
                 # position = [width, height, distance from center]
                 position.data = json.dumps({'obj_width':info['obj_width'],
                                              'frame_width':info['frame_width'],
-                                             'frame%':info['frame%']})
+                                             'frame%':info['frame%'],
+                                             'bin_section':info['bin_section']})
                 class_info.data = info['name']
 
                 # publishing
@@ -133,6 +134,9 @@ class ML(Node):
 
         class_name = model.names[cls]
 
+        # add if blocks to separate the classes into 4 sections
+        bin_section = 1
+
         largest_box = {
             'obj_width': obj_width,
             'frame_width': frame_width,
@@ -141,7 +145,8 @@ class ML(Node):
             #'area': area,
             'name' : class_name,
             #'center_dist': center_dist,
-            'class': cls
+            'class': cls,
+            'bin_section': bin_section
             }
         print(largest_box)
         self.get_logger().info(str(largest_box))

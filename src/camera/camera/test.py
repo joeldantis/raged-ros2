@@ -2,7 +2,7 @@ import cv2
 from ultralytics import YOLO
 
 # Load the YOLO instance segmentation model
-model = YOLO("best.pt")  # Replace with your model path if custom
+model = YOLO("/mnt/Storage/Hackathons/IIITM/raged-ros2/src/camera/camera/best.pt")  # Replace with your model path if custom
 
 # Open the webcam (0 = default camera)
 cap = cv2.VideoCapture(0)

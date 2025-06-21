@@ -6,9 +6,8 @@ website
 -Nodes-
 camera
 ml
-position
 
-auto
+auto -> replaces position node
 manual
 communication
 
@@ -20,6 +19,7 @@ image -> image from camera is sent
 detect -> flag sent to pause or play model
 position -> width height and distance from center of frame info sent
 class_info -> class of the object detected is sent
+mode -> auto or manual
 
 -Publishers-
 image_pub -> on the image topic
@@ -44,3 +44,7 @@ executable = /usr/bin/env python3
 
 -ISSUES-
 * In Manual mode the position topic will still be recieving data although unsed
+
+-TODO-
+* Add bin section in ml node (in the get largest function)
+* Cap stepper motor to only turn 360 deg and always return to default position before shutdown
