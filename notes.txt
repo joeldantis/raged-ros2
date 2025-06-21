@@ -20,6 +20,7 @@ detect -> flag sent to pause or play model
 position -> width height and distance from center of frame info sent
 class_info -> class of the object detected is sent
 mode -> auto or manual
+control -> from auto to communication (contains [ahead/rotate, bin_section])
 
 -Publishers-
 image_pub -> on the image topic
@@ -49,6 +50,7 @@ pos_sub -> on the position topic
     2 is rotate and return to ml node,
 
     bin_section:
+    0 is skip
     1 is section 1
     2 is section 2
     3 is section 3
