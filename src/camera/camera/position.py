@@ -25,9 +25,12 @@ class Posiotion(Node):
     def position_callback(self, msg):
         global FOV_x
         dat = json.loads(msg.data)
+        print(dat)
         angle = ((dat['obj_width'] - dat['frame_width'] / 2) / (dat['frame_width'] / 2)) * (FOV_x / 2)
 
-        print(dat)
+        if angle < 1:
+            pass
+
         pass
 
 def main(args=None):
