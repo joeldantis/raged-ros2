@@ -63,7 +63,9 @@ class ML(Node):
                 self.detect = 0
 
                 # position = [width, height, distance from center]
-                position.data = json.dumps({'obj_width':info['obj_width'], 'frame_width':info['frame_width']})
+                position.data = json.dumps({'obj_width':info['obj_width'],
+                                             'frame_width':info['frame_width'],
+                                             'frame%':info['frame%']})
                 class_info.data = info['name']
 
                 # publishing
@@ -115,10 +117,16 @@ class ML(Node):
         x1, y1, x2, y2 = big.xyxy[0].tolist() # Convert tensor to list
 
         cls = int(big.cls[0].item()) # Class ID
+        obj_height = y2-y1
         obj_width = x2 - x1
+        obj_area = obj_height*obj_width
         #height = y2 - y1
 
-        _, frame_width, _ = self.cv_image.shape
+        frame_height, frame_width, _ = self.cv_image.shape
+        frame_area = frame_height*frame_width
+
+        frame_percent = (obj_area/frame_area)*100
+
         #frame_center_x = img_width / 2
         #obj_x = width/2
         #center_dist = obj_x - frame_center_x
@@ -128,6 +136,7 @@ class ML(Node):
         largest_box = {
             'obj_width': obj_width,
             'frame_width': frame_width,
+            'frame%': frame_percent,
             #'height': height,
             #'area': area,
             'name' : class_name,
