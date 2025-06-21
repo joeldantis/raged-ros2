@@ -8,8 +8,8 @@ camera
 ml
 
 auto -> replaces position node
-manual
-communication
+manual -> sets auto/manual on the mode topic => 1: auto , 0: manual
+communication -> combines everything and send it to the arduino
 
 waste_data
 check_user -> run once on start
@@ -32,7 +32,24 @@ detect_sub -> on the detect topic
 pos_sub -> on the position topic
 
 -ARRAY-
-[auto/manual, wheel1, wheel2, wheel3, wheel4, bin_section, collect]
+[auto/manual, ahead/rotate, bin_section]
+[2 states, 3 states, 4 states, 2 states]
+[
+    auto/manual:
+    1 is auto
+    0 is manual,
+
+    ahead/rotate
+    0 is do nothing and go to next
+    1 is go ahead and return to ml node
+    2 is rotate and return to ml node,
+
+    bin_section:
+    1 is section 1
+    2 is section 2
+    3 is section 3
+    4 is section 4,
+]
 
 -NOTE-
 * Add the following line to the setup.cfg file in your each of your packages:
