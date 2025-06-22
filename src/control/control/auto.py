@@ -14,7 +14,7 @@ class Auto(Node):
     """
 
     def __init__(self):
-        # Initialize the node with the name 'ml'
+        # Initialize the node with the name 'auto'
         super().__init__('auto')
 
         # Publishers
@@ -31,14 +31,37 @@ class Auto(Node):
         print(dat)
         angle = ((dat['obj_width'] - dat['frame_width'] / 2) / (dat['frame_width'] / 2)) * (FOV_x / 2)
         msg.data = json.dumps([2,angle])
+
+        # Calculate pixel width
+        # 7cm
+
+        if dat['obj_width'] > 0:
+            distance = (6.5 * 527.5) / dat['obj_width']
+            #distance_text = f"{distance:.2f} cm"
+            # delay = distance * 0.045
+            msg.data = json.dumps([1, distance])
+
+        else:
+            #distance_text = "N/A"
+            pass
+
+        self.control.publish(msg)
         
-        if angle < 1:
+'''        
+# Frame % Distance Calculation
+
+            if angle < 1:
             if dat['frame%'] >= 70:
                 #collect
                 msg.data = json.dumps([0,int(dat['bin_section'])])
-                pass
+            
+            else:
+                dist = 10 - dat['frame%']/10
+                msg.data = json.dumps([1,dist])
 
-        pass
+        msg.data = json.dumps([0,int(dat['bin_section'])])
+'''
+
 
 def main(args=None):
     """

@@ -2,4 +2,5 @@ numpy==1.26.4
 pyserial
 opencv-python
 ultralytics
+keyboard
 

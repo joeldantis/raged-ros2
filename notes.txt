@@ -26,11 +26,15 @@ control -> from auto to communication (contains [ahead/rotate, bin_section])
 image_pub -> on the image topic
 pos_pub -> on the position topic
 class_pub -> on the class_info node
+control -> send the angle or distance from auto node
+mode -> manual or auto (present in the manual node)
+action -> the manual action to be done (as mention in the array)
 
 -Subscribers-
 image_sub -> on the image topic
 detect_sub -> on the detect topic
 pos_sub -> on the position topic
+mode_sub -> on the mode topic (in ml node and communication node)
 
 -ARRAY-
 
@@ -91,12 +95,6 @@ pos_sub -> on the position topic
 
     c -> right claw open
     v -> right claw close
-
-    bin_section:
-    1 is section 1
-    2 is section 2
-    3 is section 3
-    4 is section 4,
 ]
 
 -NOTE-

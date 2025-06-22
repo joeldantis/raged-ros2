@@ -19,6 +19,7 @@ class ML(Node):
 
         # variables
         self.detect = 1
+        self.mode = 1
 
         # Initialize the node with the name 'ml'
         super().__init__('ml')
@@ -26,6 +27,7 @@ class ML(Node):
         # Subscribers
         self.image_sub = self.create_subscription(Image,'image',self.image_callback,10)
         self.detect_sub = self.create_subscription(Int32, 'detect', self.detect_callback, 10)
+        self.mode_sub = self.create_subscription(Int32, 'mode', self.mode_callback,10)
 
         # Publishers
         self.pos_pub = self.create_publisher(String, 'position', 10)
@@ -70,14 +72,14 @@ class ML(Node):
                 class_info.data = info['name']
 
                 # publishing
-                self.pos_pub.publish(position)
+                if self.mode:
+                    self.pos_pub.publish(position)
                 self.class_pub.publish(class_info)
 
             # Display the image in a window named 'Camera Feed'
             cv2.imshow("Camera Feed", self.cv_image)
             # Wait for 1 millisecond for a key event (necessary for imshow to work)
             cv2.waitKey(1)
-
 
     def detect_callback(self,msg):
         """
@@ -87,6 +89,8 @@ class ML(Node):
         """
         self.detect = msg.data
 
+    def mode_callback(self,msg):
+        self.mode = msg.data
 
     def get_largest(self):
         global model
