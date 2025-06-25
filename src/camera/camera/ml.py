@@ -31,7 +31,7 @@ class ML(Node):
 
         # Publishers
         self.pos_pub = self.create_publisher(String, 'position', 10)
-        self.class_pub = self.create_publisher(String, 'class_info', 10)    
+        self.class_pub = self.create_publisher(String, 'class_info', 10)
 
 
         # Initialize CvBridge for converting between ROS and OpenCV images

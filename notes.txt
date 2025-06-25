@@ -21,20 +21,28 @@ position -> width height and distance from center of frame info sent
 class_info -> class of the object detected is sent
 mode -> auto or manual
 control -> from auto to communication (contains [ahead/rotate, bin_section])
+action -> from manual to communication
+
+//serial -> for serial debugging
 
 -Publishers-
 image_pub -> on the image topic
+detect_pub -> in the manual node and communication node
 pos_pub -> on the position topic
 class_pub -> on the class_info node
-control -> send the angle or distance from auto node
-mode -> manual or auto (present in the manual node)
-action -> the manual action to be done (as mention in the array)
+control_pub -> send the angle or distance (in auto node)
+mode_pub -> manual or auto (in manual node)
+action_pub -> the manual action to be done (as mention in the array) (in manual node)
+
+//serial -> for serial debugging
 
 -Subscribers-
 image_sub -> on the image topic
 detect_sub -> on the detect topic
 pos_sub -> on the position topic
+control_sub -> on the control topic (in communication node)
 mode_sub -> on the mode topic (in ml node and communication node)
+action_sub -> in the communication node
 
 -ARRAY-
 
@@ -111,3 +119,28 @@ executable = /usr/bin/env python3
 -TODO-
 * Add bin section in ml node (in the get largest function)
 * Cap stepper motor to only turn 360 deg and always return to default position before shutdown
+
+
+- ARDUINO PIN ASSIGNMENT -
+
+0 -> lid stepper -> IN1
+1 -> lid stepper -> IN2
+2 -> lid stepper -> IN3
+3 -> claw left -> PWM
+4 -> lid stepper -> IN4 
+5 -> base motor driver -> PWM
+6 -> base motor driver -> PWM
+7 -> base motor driver -> DIR
+8 -> base motor driver -> DIR
+9 -> base motor driver -> PWM
+10 -> base motor driver -> PWM
+11 -> claw rigth -> PWM
+12 -> base motor driver -> DIR
+13 -> base motor driver -> DIR
+
+A5 -> unassigned
+A4 -> unassigned
+A3 -> bin stepper -> IN4
+A2 -> bin stepper -> IN3
+A1 -> bin stepper -> IN2
+A0 -> bin stepper -> IN1

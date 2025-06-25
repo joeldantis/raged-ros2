@@ -5,7 +5,7 @@ from ultralytics import YOLO
 model = YOLO("/mnt/Storage/Hackathons/IIITM/raged-ros2/src/camera/camera/best.pt")  # Replace with your model path if custom
 
 # Open the webcam (0 = default camera)
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(2)
 
 # Check if webcam opened successfully
 if not cap.isOpened():
@@ -18,14 +18,14 @@ while True:
         break
 
     # Run YOLO inference on the frame
-    results = model.predict(source=frame, show=False, stream=True)
+    '''results = model.predict(source=frame, show=False, stream=True)
 
     for result in results:
         # Draw masks and boxes on frame
-        annotated_frame = result.plot()
+        annotated_frame = result.plot()'''
 
     # Show the output frame
-    cv2.imshow("YOLOv8 Instance Segmentation", annotated_frame)
+    cv2.imshow("YOLOv8 Instance Segmentation", frame)
 
     # Exit loop when 'q' is pressed
     if cv2.waitKey(1) & 0xFF == ord("q"):

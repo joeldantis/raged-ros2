@@ -18,7 +18,7 @@ class Auto(Node):
         super().__init__('auto')
 
         # Publishers
-        self.control = self.create_publisher(String, 'control',10)
+        self.control_pub = self.create_publisher(String, 'control',10)
 
         # Subscribers
         self.pos_sub = self.create_subscription(String,'position',self.position_callback,10)
@@ -28,24 +28,25 @@ class Auto(Node):
         dat = json.loads(msg.data)
         msg = String()
 
-        print(dat)
         angle = ((dat['obj_width'] - dat['frame_width'] / 2) / (dat['frame_width'] / 2)) * (FOV_x / 2)
         msg.data = json.dumps([2,angle])
 
         # Calculate pixel width
         # 7cm
+        print(angle)
+        if abs(angle) < 1:
+            if dat['obj_width'] > 0:
+                distance = (6.5 * 527.5) / dat['obj_width']
+                #distance_text = f"{distance:.2f} cm"
+                # delay = distance * 0.045
+                msg.data = json.dumps([1, distance])
 
-        if dat['obj_width'] > 0:
-            distance = (6.5 * 527.5) / dat['obj_width']
-            #distance_text = f"{distance:.2f} cm"
-            # delay = distance * 0.045
-            msg.data = json.dumps([1, distance])
+            else:
+                #distance_text = "N/A"
+                pass
 
-        else:
-            #distance_text = "N/A"
-            pass
-
-        self.control.publish(msg)
+        self.control_pub.publish(msg)
+        print(msg.data)
         
 '''        
 # Frame % Distance Calculation
@@ -71,7 +72,7 @@ def main(args=None):
     auto = Auto() # Create an instance of the position node
     try:
         rclpy.spin(auto) # Keep the node alive until it's explicitly shut down
-    except KeyboardInterrupt:
+    except KeyboardInterrupt:   
         pass # Handle Ctrl+C gracefully
     finally:
         auto.destroy_node() # Clean up resources
