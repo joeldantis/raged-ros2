@@ -5,7 +5,7 @@ from ultralytics import YOLO
 model = YOLO("/mnt/Storage/Hackathons/IIITM/raged-ros2/src/camera/camera/best.pt")  # Replace with your model path if custom
 
 # Open the webcam (0 = default camera)
-cap = cv2.VideoCapture(2)
+cap = cv2.VideoCapture(0)
 
 # Check if webcam opened successfully
 if not cap.isOpened():

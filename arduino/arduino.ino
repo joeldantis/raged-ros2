@@ -17,7 +17,7 @@ float lastError = 0;
 float derivative = 0;
 float controlSignal = 0;
 int delay_time = 0;
-int k = 1;
+int k = 4;
 
 // Base speed for motors (adjust as needed)
 int baseSpeed = 0;

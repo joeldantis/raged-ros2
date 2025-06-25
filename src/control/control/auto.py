@@ -34,7 +34,7 @@ class Auto(Node):
         # Calculate pixel width
         # 7cm
         print(angle)
-        if abs(angle) < 1:
+        if abs(angle) < 5:
             if dat['obj_width'] > 0:
                 distance = (6.5 * 527.5) / dat['obj_width']
                 #distance_text = f"{distance:.2f} cm"

@@ -9,7 +9,7 @@ from ultralytics import YOLO
 
 # Load the YOLO instance segmentation model
 global model
-model = YOLO("/mnt/Storage/Hackathons/IIITM/raged-ros2/src/camera/camera/best.pt")  # Replace with your model path if custom
+model = YOLO("/mnt/Storage/Hackathons/IIITM/raged-ros2/src/camera/camera/yolov8n.pt")  # Replace with your model path if custom
 
 class ML(Node):
     """
