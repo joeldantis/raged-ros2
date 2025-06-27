@@ -83,7 +83,7 @@ void rotate(String err) {
 }
 
 void ahead(String dist) {
-  float del = dist.toFloat() * 0.045 * 1000;
+  float del = dist.toFloat() * 0.04 * 1000;
 
   motor1.setSpeed(-31);
   motor2.setSpeed(25);
