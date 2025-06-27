@@ -56,16 +56,16 @@ void rotate(String err) {
 
     // Calculate left and right motor speeds
     //int pwmLeft  = constrain(baseSpeed - controlSignal, -255, maxPWM);
-    int pwm = constrain(baseSpeed + controlSignal, -255, maxPWM);
+    int pwm = constrain(baseSpeed + controlSignal, -150, 1);
 
     if ((pwm < 100) && (pwm>=0))
     {
-      pwm = map(pwm,0,100,100,255);
+      pwm = map(pwm,0,100,100,150);
     }
 
     else if ((pwm > -100) && (pwm<=0))
     {
-      pwm = map(pwm,0,-100,-100,-255);
+      pwm = map(pwm,0,-100,-100,-150);
     }  
 
     motor1.setSpeed(pwm);
@@ -83,12 +83,12 @@ void rotate(String err) {
 }
 
 void ahead(String dist) {
-  float del = dist.toFloat() * 0.045;
+  float del = dist.toFloat() * 0.045 * 1000;
 
-  motor1.setSpeed(150);
-  motor2.setSpeed(-150);
-  motor3.setSpeed(-150);
-  motor4.setSpeed(150);
+  motor1.setSpeed(-31);
+  motor2.setSpeed(25);
+  motor3.setSpeed(40);
+  motor4.setSpeed(51);
 
   delay(del);
 

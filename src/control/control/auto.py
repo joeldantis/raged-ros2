@@ -17,6 +17,9 @@ class Auto(Node):
         # Initialize the node with the name 'auto'
         super().__init__('auto')
 
+        # Variables
+        self.prev_detection = ""
+
         # Publishers
         self.control_pub = self.create_publisher(String, 'control',10)
 
@@ -27,13 +30,18 @@ class Auto(Node):
         global FOV_x
         dat = json.loads(msg.data)
         msg = String()
-
-        angle = ((dat['obj_width'] - dat['frame_width'] / 2) / (dat['frame_width'] / 2)) * (FOV_x / 2)
+        
+#        if self.prev_detection != dat['name']:
+        angle = ((dat['obj_center'] - (dat['frame_width']/2)) / (dat['frame_width'] / 2)) * (FOV_x / 2)
+        self.prev_detection = dat['name']
         msg.data = json.dumps([2,angle])
+        
+ #       else: angle = 0
 
         # Calculate pixel width
         # 7cm
         print(angle)
+
         if abs(angle) < 5:
             if dat['obj_width'] > 0:
                 distance = (6.5 * 527.5) / dat['obj_width']

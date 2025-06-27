@@ -18,7 +18,7 @@ class CameraPublisher(Node):
         # Initialize CvBridge for converting between OpenCV and ROS images
         self.bridge = CvBridge()
         # Open the default camera (index 0)
-        self.cap = cv2.VideoCapture(0)
+        self.cap = cv2.VideoCapture(2)
 
         # Check if the camera opened successfully
         if not self.cap.isOpened():
